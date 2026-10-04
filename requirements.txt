@@ -8,3 +8,5 @@ langgraph
 chromadb
 pypdf
 sentence-transformers
+torch
+torchvision
