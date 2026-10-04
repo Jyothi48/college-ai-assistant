@@ -1,6 +1,9 @@
-
 import os
+import streamlit as st
 from typing import TypedDict
+
+# Get Groq API key from Streamlit Secrets
+os.environ["GROQ_API_KEY"] = st.secrets["GROQ_API_KEY"]
 
 from pypdf import PdfReader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
